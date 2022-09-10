@@ -10,3 +10,12 @@ function toggleDisplay() {
 //login division
 let submit = document.querySelector(".submit");
 submit.addEventListener('click', toggleDisplay);
+let username = document.querySelector(".un");
+function displayUsername() {
+    let usernam = document.querySelector(".username");
+    usernam.innerHTML = username.value;
+    usernam.classList.remove("invisible");
+    let logButton = document.getElementById("logButton");
+    logButton.innerHTML = "Sign Out";
+}
+username.addEventListener('change', displayUsername);

@@ -19,6 +19,14 @@ nav ul {
     margin-left: 1px;
     list-style-type: none;
 }
+#loginSection {
+    display: flex;
+    margin-left: auto;
+
+}
+.username {
+    margin-right: 10px;
+}
 nav li {
     padding: 15px;
     font-size: 20px;
@@ -38,7 +46,6 @@ nav button {
     font-size: 20px;
     color: white;
     background: #006AF6;
-    margin-left: auto;
     font-size: 18px;
 }
 nav button:hover {
