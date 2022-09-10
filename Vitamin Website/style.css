@@ -41,6 +41,9 @@ nav button {
     margin-left: auto;
     font-size: 18px;
 }
+nav button:hover {
+    opacity: 0.9;
+}
 .buttons {
     margin-top: 20px;
 }
