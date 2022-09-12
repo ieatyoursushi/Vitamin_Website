@@ -62,8 +62,8 @@ nav button:hover {
     justify-content: center;
 }
 .jumboTron .jumbo {
-    height: 400px;
-    width: 1600px;
+    height: 80%;
+    width: 82%;
     background: black;
     display: flex;
     border-radius: 11px;
