@@ -51,12 +51,19 @@ nav button {
 nav button:hover {
     opacity: 0.9;
 }
+select#about {
+    border: none;
+}
+#about {
+    font-family: Garamond;
+    font-size: 20px;
+}
 .buttons {
     margin-top: 20px;
 }
 .jumboTron {
     height: 500px;
-    background: gainsboro;
+    background: steelblue;
     display: flex;
     align-items: center;
     justify-content: center;

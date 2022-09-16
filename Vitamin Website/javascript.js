@@ -1,4 +1,4 @@
-﻿let splitBox = document.querySelector(".splitBox");
+let splitBox = document.querySelector(".splitBox");
 splitBox.children[2].children[0].style.background = "#006AF6";
 splitBox.children[2].children[1].style.color = "black";
 let webMain = document.querySelector(".webMain");
