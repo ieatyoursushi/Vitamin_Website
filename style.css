@@ -112,7 +112,14 @@ img {
 .invisible {
     display: none;
 }
-
+.slides {
+    display: flex;
+    align-item: center;
+    width: 100%;
+}
+.slides .circle {
+    margin: 5px;
+}
 /* Login Tab */
 
 .login {

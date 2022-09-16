@@ -25,14 +25,23 @@ const image2 = "'vitamins stock image 640x427.jpeg'";
 const images = [image2, image1];
 let slideDiv = document.getElementById("splitImage");
 //for UI slide tracker
-for(let i = 0 ; i < images.lenght; i++) {
-    
+for(let i = 0 ; i < images.length; i++) {
+    let circle = document.createElement('div');
+    circle.style.borderRadius = "100%";
+    circle.style.width = "10px";
+    circle.style.height = "10px"
+    circle.style.background = "grey";
+    circle.classList.add("circle");
+    let slides = document.querySelector(".slides");
+    slides.append(circle);
 }
+let circles = document.querySelectorAll(".circle");
 //psuedo recursion
 let i = 0;
 function cycle() {
     slideDiv.style.background = "url(" + images[i] + ")";
     console.log(images[i]);
+    circles[i].style.background = "white";
     i++;
     console.log(i)
     if(i === images.length) {
