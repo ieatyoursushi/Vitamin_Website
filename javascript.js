@@ -19,3 +19,24 @@ function displayUsername() {
     logButton.innerHTML = "Sign Out";
 }
 username.addEventListener('change', displayUsername);
+//jumbotron slideshow
+const image1 = "'vitamineimage.PNG'";
+const image2 = "'vitamins stock image 640x427.jpeg'";
+const images = [image2, image1];
+let slideDiv = document.getElementById("splitImage");
+//for UI slide tracker
+for(let i = 0 ; i < images.lenght; i++) {
+    
+}
+//psuedo recursion
+let i = 0;
+function cycle() {
+    slideDiv.style.background = "url(" + images[i] + ")";
+    console.log(images[i]);
+    i++;
+    console.log(i)
+    if(i === images.length) {
+        i = 0;
+    }
+}
+setInterval(cycle, 4000);
