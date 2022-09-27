@@ -14,12 +14,11 @@ nav {
     align-items: center;
     padding: 0px 50px;
 }
-
-    nav ul {
+nav ul {
         display: flex;
         margin-left: 1px;
         list-style-type: none;
-    }
+}
 
 #loginSection {
     display: flex;
@@ -143,6 +142,40 @@ img {
 .slides .circle {
     margin: 5px;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px solid;
+    height: 190px;
+    width: auto;
+    margin-top: 100px;
+    background: #212529;
+    text-align: center;
+}
+.footer heading {
+    display: inline-block;
+    color: white;
+}
+ 
+.footer .socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100px;
+    margin-top: 20px;
+}
+.footer .socialMedia a {
+    font-size: 24px;
+    color: white;
+}
+.footer footer {
+    font-weight: 100;
+    color: white;
+    margin: 5px;
+}
+
 /* Login Tab */
 
 .login {
@@ -249,8 +282,28 @@ a {
     text-decoration: none
 }
 
-@media (max-width: 600px) {
+@media (max-width: 610px) {
     .main {
         border-radius: 0px;
+    }
+    #loginSection {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        height: auto;
+        display: flex;
+    }
+    nav ul {
+        display: block;
+    }
+}
+@media(max-width: 475px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul {
+        display: block;
     }
 }

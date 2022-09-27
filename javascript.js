@@ -22,7 +22,7 @@ username.addEventListener('change', displayUsername);
 //jumbotron slideshow
 const image1 = "'vitamineimage.PNG'";
 const image2 = "'vitamins stock image 640x427.jpeg'";
-const images = [image2, image1, 'https://img.freepik.com/free-vector/vitamin-food-infographic_23-2148485173.jpg?w=360','https://images.theconversation.com/files/156949/original/image-20170215-19241-1ynym4v.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop'];
+const images = [image2, image1, 'https://cdn.flintrehab.com/uploads/2019/07/vitamins-for-cerebral-palsy.jpg','https://images.everydayhealth.com/images/vitamin-c-serums-101-best-products-alt-1440x810.jpg'];
 let slideDiv = document.getElementById("splitImage");
 //for UI slide tracker, flexible with slides or images array length
 for(let i = 0 ; i < images.length; i++) {
