@@ -1,28 +1,28 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <meta name="description" content="Best vitamins delivered fast online offering the highest quality of vitamins and herbal supplements">
+    <meta name="keywords" content="Nutrient Vitamin Co, herbs, best vitamins">
+    <meta name="copyright" content="All rights reserved by Gabriel Kung">
+    <meta name="robots" content="index, follow">
+    <title> The Vitamin Company </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/123/123420.png">
 </head>
 <body>
-    <div class="webMain">
+    <div class="webMain" data-webPage="main" >
         <nav>
-            <h2> Vitamin Co </h2>
+            <img style="width: 30px;" src="vitaminlogo.png">
+            <h2 class="logo"> Vitamin Co </h2>
             <ul>
-                <li><a href='#this'> Vitamins </a></li>
-                <li><a href='#'> Supplements</a></li>
-                <li>
-                    <a href='#'> 
-                          <select name="about" id="about">  
-                          <option>About Us</option>
-                          <option value="Terms"> Contact Us </option>
-                          <option value="Privacy"> Privacy </option> 
-                          </select>
-                    </a>
-                </li>
+                <li class="rewards" id="main"><a href='#main'> Home Page </a></li>
+                <li id="rewardButton"><a href='#rewards'> Rewards </a></li>
+                <!-- about page has multiple types of info like contact -->
+                <li> <a href='#contact'> Contact </a> </li>
             </ul>
             
             <nav id="loginSection">
@@ -36,34 +36,49 @@
                 <div class="split" id="splitContent">
                     <div class="splitBox">
                         <h1>Summer's best vitamins</h1>
-                        <p> All the nutrients found in fruits fruits and vegetables packed in tiny pills. </p>
+                        <p> Essential nutrients, endless energy, Stay healthy and active with our vitamins! </p>
                         <div class="buttons">
-                            <button>Button </button>
-                            <button>Button </button>
+                            <button id="shopbutton">Shop </button>
+                            <button id="locabutton">Location </button>
                         </div>
                     </div>
                 </div>
                 <div class="split" id="splitImage">
                     <div class="slides">
-                        
+                                          
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
+        <div class="contact" id="contact">
+            <div class="tint"> 
+                <header> 
+                    <h1 style="font-size: 36px; margin-bottom: 4px;"> Get in touch </h1>
+                    <p style="margin-top:15px"> 📞 Phone: 800-Vitamins (800-782-7282)</p>
+                    <p> ✉ Email: <span style="color: red"> VitaminCompany@gmail.com </span></p>
+                    <p id="location"> 📍 Adress: 595 Pacific Ave 4th floor San Fransisco, CA</p>
+                </header>
+                <div class="contactInput">
+                    <section>
+                        <textarea name="Text1" cols="40" rows="5"></textarea>
+                        <textarea name="Text1" cols="40" rows="5"></textarea>
+                        <textarea name="Text1" cols="40" rows="5"></textarea>
+                    
+                    </section>
+                    <section>
+                        <textarea name="Text1" cols="40" rows="5" style="height: 139px"></textarea>
+                    
+                    </section>
+                </div>
+            </div>
+        </div>
 
         <!-- bottom of the page -->
          
         <div class="footer">
             <heading>
-                <h1 style="margin-top: 10px; margin-bottom: 0;"> Vitamin Co. </h1>
-                <footer> ©Vitamin Co 2022</footer>
+                <h1 style="margin-top: 10px; margin-bottom: 7px; letter-spacing: 4px"> Vitamin Co. </h1>
+                <footer> ©TheVitaminCompany 1965</footer>
             </heading>
  
             <div class="socialMedia">
@@ -71,27 +86,278 @@
                 <a target="_blank" href="https://twitter.com" class="fa fa-twitter"></a>
                 <a target="_blank" href="https://instagram.com" class="fa fa-instagram"></a>
             </div>
+            <div class="map">
+                
  
+
+                
+            </div>
         </div>
         
     </div>
     <!-- Login Page  -->
-    <div class="login invisible">
+    <div class="login invisible" data-webPage="login">
         <div class="main">
             <p class="sign" align="center">Sign in</p>
             <form class="form1">
                 <input class="un " type="text" align="center" placeholder="Username">
                 <input class="pass" type="password" align="center" placeholder="Password">
                 <a class="submit" align="center">Sign in</a>
-                <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+                <p class="forgot" align="center"><a href="#">Forgot Password?</a></p>
             </form>
 
         </div>
     </div>
 
 
+    
+    <!-- Location Page-->
+    <div class="Location invisible" data-webPage="location">
+        <heading> 
+            <h2> Location: 595 Pacific Ave 4th floor San Fransisco, CA </h2>
+            <h3> Phone: 445-982-2401</h3>
+            
+ 
+        </heading>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.703628068319!2d-122.40706688474774!3d37.796984818654366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f4e635bb13%3A0xdb0e7d3f68885e77!2s595%20Pacific%20Ave%204th%20floor%2C%20San%20Francisco%2C%20CA%2094133!5e0!3m2!1sen!2sus!4v1664571127954!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <button onclick="defaultPage()"> back </button>
+    </div>
+    <!-- Product/Shopping page -->
+    
+    <div class = "Products invisible" data-webPage="Products">
+        <!-- pretend that product div is body div-->
+        <header>
+            <h1> Our Products</h1>
+            <button id="return"> return </button>
+        </header>
+        <div class="items">
+                
+        </div>
+    </div>
+    <div class="Purchase invisible" data-webPage="Purchase">
+        <header>
+            <h1 style="visibility: hidden"> x </h1>
+            <h1> Purchase </h1>
+            <h1 id ="x" style="margin-right:15px"> ⓧ </h1>
+        </header>
+        
+    </div>
+    <!-- Rewards Page -->
+    <div class="Rewards invisible" data-webPage="Rewards">
+        <!-- in order to replicate starbucks rewards page, use overlapping opacity-->
+        <nav>
+            <img style="width: 30px;" src="vitaminlogo.png">
+            <h2 class="logo"> Vitamin Co </h2>
+            <ul>
+                <li><a href="#main" onclick="defaultPage()"> Home Page </a></li>
+                <li class="rewards" id="rewards"><a href="#rewards"> Rewards </a></li>
+                <!-- about page has multiple types of info like contact -->
+                <li> <a href="#contact"> Contact </a> </li>
+            </ul>
+            <nav id="loginSection">
+                <button id="goBack" onclick="defaultPage()"> Back </button>
+            </nav>
+        </nav>
+        <div class="rBorder">
+            <h3> Vitamin Rewards </h3>
+        </div>
+        
+        <div class="rewardJumbotron">
+            <div class="textSection">
+                <div class="textBox">
+                    <h1 style="margin:0"> FREE VITAMINS <br> ARE A TAP AWAY </h1>
+                    <h2 style="font-weight:100;"> Join now to start earning Rewards </h2>
+                    <div style="height:5px; width:100%; background: steelblue; border-radius:5px"></div>
 
-    <script src="javascript.js"></script>
+                    <button id="joinNow"> Join Now </button>
+                    <h2 style="font-weight:100;"> Or <u> join the app</u> for the best experience </h2>
+                </div>
+            </div>
+            <div class="imageSection">
+            </div>
+        </div>
+        <div class="gettingStarted">
+            <header>
+                <h1 style="font-size:30px"> Getting started is easy</h1>
+                <p>Earn Stars and get rewarded in a few easy steps. </p>
+            </header>
+            <div class="rewardSteps">
+                <div class="rewardStep">
+                    <div class="big">
+                        <h1> 1. &nbsp; </h1>
+                        <h3>Create an account </h3>
+                    </div>
+                    <p> To get started, <u> join now. </u> You can also <u> join in the app </u> to get access to the full range of Vitamin Co's Reward benefits.</p>
+                </div>
+                <div class="rewardStep">
+                    <div class="big">
+                        <h1> 2. &nbsp; </h1>
+                        <h3> Order and pay how you'd like</h3>
+                    </div>
+                    <p> Use cash, credit/debit card or save some time and pay right through the app. You'll collect points all ways. <u>Learn how </u></p>
+                </div>
+                <div class="rewardStep">
+                    <div class="big">
+                        <h1> 3.  &nbsp; </h1>
+                        <h3> Earn Points, Get Rewards </h3>
+                    </div>
+                    <p> As you earn Points, you can redeem them for Rewards. Start redeemig with as little as 25 points!</p>
+                </div>
+            </div>
+        </div>
+        <div class="px">
+            <h2> Get your favorites for free </h2>
+            <div class="pointsNav">
+                <div class="pointsTab">
+                    <h2> 25</h2>
+                </div>
+                <div class="pointsTab ">
+                    <h2> 50 </h2>
+                </div>
+                <div class="pointsTab ">
+                    <h2> 150 </h2>
+                </div>
+                <div class="pointsTab ">
+                    <h2> 200 </h2>
+                </div>
+            </div>
+        </div>
+        <div class="rewardsTab">
+            <img src="b1-removebg-preview.png">
+            <div class="rewardText">
+                <h2> 25 Points </h2>
+                <p> 25 points will earn you a free Vitamin D supplement. </p>
+            </div>
+        </div>
+        <div class="rewardsTab">
+            <img src="b1-removebg-preview.png">
+            <div class="rewardText">
+                <h2> 50 points </h2>
+                <p> 50 points will earn you a free Vitamin B-12 supplement as well as another supplement of your choice.</p>
+            </div>
+        </div>
+        <div class="rewardsTab">
+            <img src="b1-removebg-preview.png">
+            <div class="rewardText">
+                <h2> 75 Points </h2>
+                <p> 75 Points will earn you a free fish oil supplement as well as 2 custom supplements</p>
+            </div>
+        </div>
+        <div class="rewardsTab">
+            <img src="b1-removebg-preview.png">
+            <div class="rewardText">
+                <h2> 200 points </h2>
+                <p> You will be awarded a batch of vitamin supplements of your choosing </p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- rewards landing page -->
+    <div class="AwardLandingPage invisible" data-webPage="AwardLandingPage">
+        <h3>Customer Rewards Program </h3>
+        <p>Sign up for our Customer Rewards Program</p>
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="usrname">Username</label>
+                <input type="text" id="usrname" name="usrname" required>
+                <label for="psw">Password</label>
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <input type="submit" value="Submit">
+                <input id="inputExit" type="button" value="exit">
+            </form>
+        </div>
+        <!--Change the password length to be at least 9 characters -->
+        <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
+        <!-- end -->
+    </div>
+    
+    <!-- delete script and make own -->
+    <script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+<!--Change the password length to be at least 9 characters -->
+  // Validate length
+  if(myInput.value.length >= 9) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+    
+    <script src="javascript.js" async></script>
+    <script src="map.js"></script>
+    <script src="shopLayout.js"></script>
+    <script src="logo.js"></script>
+    <script>
+        let webPges = document.querySelectorAll("[data-webPage]");
+        for(let i = 0; i < webPages.length; i++) {
+            console.log(webPages[i]);
+        }
+        function defaultPage(){
+            for(let i = 0; i < webPages.length; i++) {
+                webPages[i].classList.add("invisible");
+            }
+            webPages[0].classList.remove("invisible");
+            location.href = "https://vitaminstoregithub.ieatyourshushi.repl.co/#";
+        }
+    </script>
 
 </body>
 </html>

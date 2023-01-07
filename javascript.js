@@ -56,10 +56,19 @@ function defaultState() {
     })
 }
 //psuedo recursion
- 
+window.addEventListener('load', function() {
+    slideDiv.style.opacity = 1;
+})
+let activated = false;
+let transDelay = 300;
 function cycle() {
     defaultState();
-    slideDiv.style.background = "url(" + images[i] + ")";
+    slideDiv.style.opacity = 0;
+    activated = true;
+    if(activated) {
+        setTimeout("slideDiv.style.opacity = 1;", transDelay);
+        setTimeout('slideDiv.style.background = "url(" + images[i] + ")";', transDelay - 100)
+    }
     console.log(images[i]);
     circles[i].style.background = "white";
     i++;
@@ -68,4 +77,5 @@ function cycle() {
         i = 0;
     }
 }
-setInterval(cycle, 4000);
+cycle();
+setInterval(cycle, 3500);
